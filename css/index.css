@@ -1,0 +1,154 @@
+/*Variáveis*/
+:root {
+  --green: #04c35c;
+  --blue: #2b6cb0;
+
+  --white: #ffffff;
+  --white300: #f7fafc;
+
+  --dark: #1a202c;
+  --input: #e8e8e8;
+}
+
+.container {
+  display: flex;
+  margin: 0px;
+}
+
+div.container_img, div.container_login {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.container_img {
+  background: var(--white300);
+}
+
+div.form_action {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+form.form_login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+}
+
+form.form_login > h1 {
+  font-size: 1.625rem;
+  line-height: 2.06rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+form.form_login > p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  /* padding-bottom: 2rem; */
+}
+
+div.input_login > label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 0.5rem;
+}
+
+div.input_login > input {
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  height: 2.525rem;
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+div.form_submit > button {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+
+  cursor: pointer;
+}
+
+.input_login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login_lembre_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.2rem 0;
+}
+
+#btn_entrar{
+  background: var(--green);
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  height: 2.525rem;
+  margin-bottom: 0.5rem;
+}
+
+#btn_google{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark);
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  height: 2.525rem;
+  margin-bottom: 0.5rem;
+}
+
+#btn_google > img {
+  margin-right: 0.5rem;
+}
+
+#container_cadastro {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+@media screen and (max-width:809px) {
+  div.container_img {
+    display: none;
+  }
+  div.container {
+    height: 100vh;
+    width: 100vw;
+  }
+  div.container_login {
+    width: 100%;
+  }
+  div.form-action {
+    justify-content: flex-start;
+    padding-top: 4.5rem;
+  }
+  form.form_login {
+    width: 90%;
+  }
+}
